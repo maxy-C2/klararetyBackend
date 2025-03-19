@@ -1,0 +1,24 @@
+# Files
+.env
+cert.crt
+cert.key
+db.sqlite3
+
+#Folders
+__pycache__
+.coverage
+cover/
+analytics/migrations
+audit/migrations
+billing/migrations
+communication/migrations
+consent/migrations
+healthcare/migrations
+pharmco/migrations
+telemedicine/migrations
+users/migrations
+wearables/migrations
+.anima/
+docs/
+venv/
+
