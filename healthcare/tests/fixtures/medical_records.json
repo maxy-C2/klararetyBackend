@@ -1,0 +1,285 @@
+[
+    {
+      "model": "healthcare.medicalrecord",
+      "pk": 1,
+      "fields": {
+        "patient": 4,
+        "medical_record_number": "AB12345678",
+        "created_at": "2023-01-04T12:00:00.000Z",
+        "updated_at": "2023-01-04T12:00:00.000Z",
+        "primary_physician": 2,
+        "date_of_birth": "1985-03-25",
+        "gender": "Female",
+        "blood_type": "O+",
+        "height": 165.0,
+        "weight": 65.0
+      }
+    },
+    {
+      "model": "healthcare.medicalrecord",
+      "pk": 2,
+      "fields": {
+        "patient": 5,
+        "medical_record_number": "CD87654321",
+        "created_at": "2023-01-05T12:00:00.000Z",
+        "updated_at": "2023-01-05T12:00:00.000Z",
+        "primary_physician": 3,
+        "date_of_birth": "1990-11-10",
+        "gender": "Male",
+        "blood_type": "A-",
+        "height": 180.0,
+        "weight": 75.0
+      }
+    },
+    {
+      "model": "healthcare.allergy",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "allergen": "Penicillin",
+        "reaction": "Rash, hives",
+        "severity": "Moderate",
+        "diagnosed_date": "2022-06-15"
+      }
+    },
+    {
+      "model": "healthcare.allergy",
+      "pk": 2,
+      "fields": {
+        "medical_record": 1,
+        "allergen": "Peanuts",
+        "reaction": "Difficulty breathing, swelling",
+        "severity": "Severe",
+        "diagnosed_date": "2021-03-20"
+      }
+    },
+    {
+      "model": "healthcare.allergy",
+      "pk": 3,
+      "fields": {
+        "medical_record": 2,
+        "allergen": "Latex",
+        "reaction": "Skin irritation",
+        "severity": "Mild",
+        "diagnosed_date": "2022-09-10"
+      }
+    },
+    {
+      "model": "healthcare.medication",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "name": "Lisinopril",
+        "dosage": "10mg",
+        "frequency": "Once daily",
+        "start_date": "2022-11-15",
+        "end_date": null,
+        "active": true,
+        "prescribed_by": 2,
+        "reason": "Hypertension"
+      }
+    },
+    {
+      "model": "healthcare.medication",
+      "pk": 2,
+      "fields": {
+        "medical_record": 1,
+        "name": "Ibuprofen",
+        "dosage": "400mg",
+        "frequency": "As needed",
+        "start_date": "2022-12-01",
+        "end_date": null,
+        "active": true,
+        "prescribed_by": 2,
+        "reason": "Pain relief"
+      }
+    },
+    {
+      "model": "healthcare.medication",
+      "pk": 3,
+      "fields": {
+        "medical_record": 2,
+        "name": "Metformin",
+        "dosage": "500mg",
+        "frequency": "Twice daily",
+        "start_date": "2022-10-05",
+        "end_date": null,
+        "active": true,
+        "prescribed_by": 3,
+        "reason": "Type 2 Diabetes"
+      }
+    },
+    {
+      "model": "healthcare.condition",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "name": "Hypertension",
+        "icd10_code": "I10",
+        "diagnosis_date": "2022-11-15",
+        "resolved_date": null,
+        "active": true,
+        "diagnosed_by": 2,
+        "notes": "Essential hypertension"
+      }
+    },
+    {
+      "model": "healthcare.condition",
+      "pk": 2,
+      "fields": {
+        "medical_record": 1,
+        "name": "Acute Bronchitis",
+        "icd10_code": "J20.9",
+        "diagnosis_date": "2022-01-10",
+        "resolved_date": "2022-01-30",
+        "active": false,
+        "diagnosed_by": 2,
+        "notes": "Resolved with antibiotics"
+      }
+    },
+    {
+      "model": "healthcare.condition",
+      "pk": 3,
+      "fields": {
+        "medical_record": 2,
+        "name": "Type 2 Diabetes",
+        "icd10_code": "E11.9",
+        "diagnosis_date": "2022-10-05",
+        "resolved_date": null,
+        "active": true,
+        "diagnosed_by": 3,
+        "notes": "Managing with medication and diet"
+      }
+    },
+    {
+      "model": "healthcare.vitalsign",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "date_recorded": "2023-01-15T09:30:00.000Z",
+        "recorded_by": 2,
+        "temperature": 36.8,
+        "heart_rate": 72,
+        "blood_pressure_systolic": 130,
+        "blood_pressure_diastolic": 85,
+        "respiratory_rate": 16,
+        "oxygen_saturation": 98
+      }
+    },
+    {
+      "model": "healthcare.vitalsign",
+      "pk": 2,
+      "fields": {
+        "medical_record": 1,
+        "date_recorded": "2022-12-10T10:15:00.000Z",
+        "recorded_by": 2,
+        "temperature": 37.0,
+        "heart_rate": 75,
+        "blood_pressure_systolic": 135,
+        "blood_pressure_diastolic": 88,
+        "respiratory_rate": 18,
+        "oxygen_saturation": 97
+      }
+    },
+    {
+      "model": "healthcare.vitalsign",
+      "pk": 3,
+      "fields": {
+        "medical_record": 2,
+        "date_recorded": "2023-01-05T14:00:00.000Z",
+        "recorded_by": 3,
+        "temperature": 36.7,
+        "heart_rate": 68,
+        "blood_pressure_systolic": 125,
+        "blood_pressure_diastolic": 80,
+        "respiratory_rate": 15,
+        "oxygen_saturation": 99
+      }
+    },
+    {
+      "model": "healthcare.labtest",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "name": "Comprehensive Metabolic Panel",
+        "test_date": "2023-01-05",
+        "ordered_by": 2,
+        "results_available": true,
+        "results_date": "2023-01-08",
+        "file": null
+      }
+    },
+    {
+      "model": "healthcare.labresult",
+      "pk": 1,
+      "fields": {
+        "lab_test": 1,
+        "test_component": "Glucose",
+        "value": "95",
+        "unit": "mg/dL",
+        "reference_range": "70-99",
+        "is_abnormal": false,
+        "notes": null
+      }
+    },
+    {
+      "model": "healthcare.labresult",
+      "pk": 2,
+      "fields": {
+        "lab_test": 1,
+        "test_component": "Potassium",
+        "value": "4.2",
+        "unit": "mmol/L",
+        "reference_range": "3.5-5.0",
+        "is_abnormal": false,
+        "notes": null
+      }
+    },
+    {
+      "model": "healthcare.labresult",
+      "pk": 3,
+      "fields": {
+        "lab_test": 1,
+        "test_component": "Creatinine",
+        "value": "1.3",
+        "unit": "mg/dL",
+        "reference_range": "0.7-1.2",
+        "is_abnormal": true,
+        "notes": "Slightly elevated, monitor"
+      }
+    },
+    {
+      "model": "healthcare.medicalnote",
+      "pk": 1,
+      "fields": {
+        "medical_record": 1,
+        "note_type": "soap",
+        "created_at": "2023-01-15T09:45:00.000Z",
+        "updated_at": "2023-01-15T09:45:00.000Z",
+        "provider": 2,
+        "appointment": null,
+        "subjective": "Patient reports occasional headaches and dizziness in the morning.",
+        "objective": "BP: 130/85, HR: 72, Temp: 36.8C, O2: 98%. Physical exam is normal.",
+        "assessment": "Hypertension, moderately controlled on current medication.",
+        "plan": "Continue Lisinopril 10mg daily. Follow up in 3 months. Lifestyle modifications discussed.",
+        "content": null
+      }
+    },
+    {
+      "model": "healthcare.medicalnote",
+      "pk": 2,
+      "fields": {
+        "medical_record": 2,
+        "note_type": "progress",
+        "created_at": "2023-01-05T14:15:00.000Z",
+        "updated_at": "2023-01-05T14:15:00.000Z",
+        "provider": 3,
+        "appointment": null,
+        "subjective": null,
+        "objective": null,
+        "assessment": null,
+        "plan": null,
+        "content": "Patient reports good compliance with Metformin. Blood glucose levels trending down as per home monitoring. Continuing current management plan."
+      }
+    }
+  ]

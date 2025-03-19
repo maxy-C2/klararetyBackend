@@ -1,0 +1,122 @@
+[
+    {
+      "model": "users.customuser",
+      "pk": 1,
+      "fields": {
+        "username": "admin",
+        "email": "admin@example.com",
+        "password": "pbkdf2_sha256$180000$XLk4VNM9eyXs$3vr+kxLKDQz0VqgmK8DkZTvgkVFdUcjIzJfvhKzV6e4=",
+        "first_name": "Admin",
+        "last_name": "User",
+        "is_active": true,
+        "is_staff": true,
+        "is_superuser": true,
+        "date_joined": "2023-01-01T00:00:00.000Z",
+        "role": "admin",
+        "phone_number": "",
+        "date_of_birth": null,
+        "address": "",
+        "city": "",
+        "state": "",
+        "zip_code": "",
+        "specialty": "",
+        "license_number": ""
+      }
+    },
+    {
+      "model": "users.customuser",
+      "pk": 2,
+      "fields": {
+        "username": "drsmith",
+        "email": "drsmith@example.com",
+        "password": "pbkdf2_sha256$180000$XLk4VNM9eyXs$3vr+kxLKDQz0VqgmK8DkZTvgkVFdUcjIzJfvhKzV6e4=",
+        "first_name": "John",
+        "last_name": "Smith",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "date_joined": "2023-01-02T00:00:00.000Z",
+        "role": "provider",
+        "phone_number": "555-123-4567",
+        "date_of_birth": "1975-05-15",
+        "address": "123 Medical Center Dr",
+        "city": "Healthcare City",
+        "state": "CA",
+        "zip_code": "90210",
+        "specialty": "Internal Medicine",
+        "license_number": "MD12345"
+      }
+    },
+    {
+      "model": "users.customuser",
+      "pk": 3,
+      "fields": {
+        "username": "drjones",
+        "email": "drjones@example.com",
+        "password": "pbkdf2_sha256$180000$XLk4VNM9eyXs$3vr+kxLKDQz0VqgmK8DkZTvgkVFdUcjIzJfvhKzV6e4=",
+        "first_name": "Sarah",
+        "last_name": "Jones",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "date_joined": "2023-01-03T00:00:00.000Z",
+        "role": "provider",
+        "phone_number": "555-987-6543",
+        "date_of_birth": "1980-08-20",
+        "address": "456 Health Parkway",
+        "city": "Healthcare City",
+        "state": "CA",
+        "zip_code": "90210",
+        "specialty": "Cardiology",
+        "license_number": "MD67890"
+      }
+    },
+    {
+      "model": "users.customuser",
+      "pk": 4,
+      "fields": {
+        "username": "patient1",
+        "email": "patient1@example.com",
+        "password": "pbkdf2_sha256$180000$XLk4VNM9eyXs$3vr+kxLKDQz0VqgmK8DkZTvgkVFdUcjIzJfvhKzV6e4=",
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "date_joined": "2023-01-04T00:00:00.000Z",
+        "role": "patient",
+        "phone_number": "555-111-2222",
+        "date_of_birth": "1985-03-25",
+        "address": "789 Resident Lane",
+        "city": "Patientville",
+        "state": "CA",
+        "zip_code": "90211",
+        "specialty": "",
+        "license_number": ""
+      }
+    },
+    {
+      "model": "users.customuser",
+      "pk": 5,
+      "fields": {
+        "username": "patient2",
+        "email": "patient2@example.com",
+        "password": "pbkdf2_sha256$180000$XLk4VNM9eyXs$3vr+kxLKDQz0VqgmK8DkZTvgkVFdUcjIzJfvhKzV6e4=",
+        "first_name": "Bob",
+        "last_name": "Williams",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "date_joined": "2023-01-05T00:00:00.000Z",
+        "role": "patient",
+        "phone_number": "555-333-4444",
+        "date_of_birth": "1990-11-10",
+        "address": "101 Patient Ave",
+        "city": "Patientville",
+        "state": "CA",
+        "zip_code": "90211",
+        "specialty": "",
+        "license_number": ""
+      }
+    }
+  ]
